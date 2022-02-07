@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 8.0, 51.0, 1920.0, 1037.0 ],
+		"rect" : [ 0.0, 43.0, 1920.0, 1037.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,29 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1211.0, 57.0, 80.0, 22.0 ],
+					"text" : "loadmess 0.8"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 330.0, 58.0, 150.0, 20.0 ],
+					"text" : "854 480"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-19",
 					"maxclass" : "newobj",
@@ -932,8 +955,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "jit_matrix", "" ],
-					"patching_rect" : [ 28.0, 577.700000000000045, 315.0, 22.0 ],
-					"text" : "cv.jit.keypoints @normalize 1 @threshold 0.4 @octaves 4"
+					"patching_rect" : [ 28.0, 577.700000000000045, 322.0, 22.0 ],
+					"text" : "cv.jit.keypoints @normalize 1 @threshold 0.55 @octaves 5"
 				}
 
 			}
@@ -1141,6 +1164,13 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
 					"source" : [ "obj-11", 0 ]
